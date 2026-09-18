@@ -223,7 +223,7 @@ def main():
     ARGS = p.parse_args()
     srv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), H)
     url = f"http://127.0.0.1:{srv.server_address[1]}/"
-    print(f"Shannon Box running at {url}" + ("  [DRY RUN]" if ARGS.dry_run else "  [LIVE: winning shuts down this PC]"))
+    print(f"Shannon Box running at {url}" + ("  [DRY RUN]" if ARGS.dry_run else "  [LIVE: winning uncover the mistry]"))
     print("Ctrl+C to quit.")
     webbrowser.open(url)
     try:
